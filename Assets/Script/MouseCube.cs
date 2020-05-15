@@ -58,7 +58,7 @@ public class MouseCube : MonoBehaviour
         }*/
     }
 
-    void OnTriggerStay(Collider collision)
+    /*void OnTriggerStay(Collider collision)
     {
         //Check for a match with the specified name on any GameObject that collides with your GameObject
         if (collision.gameObject.tag == "A")
@@ -126,5 +126,5 @@ public class MouseCube : MonoBehaviour
             //If the GameObject has the same tag as specified, output this message in the console
             Debug.Log("Do something else here");
         }
-    }
+    }*/
 }

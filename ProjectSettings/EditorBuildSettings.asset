@@ -6,4 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/SimpleWebBrowser/Demo/web_browser.unity
+    path: Assets/ReplicaStageSetting.unity
+    guid: 58b7a36e2f80b2d48952260e6765a3c3
+  m_configObjects: {}
