@@ -22,11 +22,11 @@ public class DetectCollision : MonoBehaviour
 
         if (collision.gameObject.tag == "mug")
         {
-            Debug.Log("Mug is selected");
+            //Debug.Log("Mug is selected");
             LedManager.touchMug = true;
         } else if (collision.gameObject.tag == "box")
         {
-            Debug.Log("Box is selected");
+            //Debug.Log("Box is selected");
             LedManager.touchBox = true;
         }
     }

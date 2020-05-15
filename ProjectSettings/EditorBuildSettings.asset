@@ -5,7 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/ReplicaStageSetting.unity
+  - enabled: 0
+    path: Assets/Scene/ReplicaStageSetting.unity
     guid: 58b7a36e2f80b2d48952260e6765a3c3
+  - enabled: 1
+    path: Assets/Replica.unity
+    guid: 4b60afb7d25edea4f815d0b069ed4a83
   m_configObjects: {}

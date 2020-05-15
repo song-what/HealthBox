@@ -82,14 +82,14 @@
     <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_LiveWindow.cs" />
     <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Input_PostProcessBuild.cs" />
     <Compile Include="Assets\SteamVR\Input\Editor\SteamVR_Skeleton_PoserEditor.cs" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>D:/IVRE-P1-Healthbox-thinkaloud/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/IVRE-P1-Healthbox-thinkaloud/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Editor">
       <HintPath>D:/IVRE-P1-Healthbox-thinkaloud/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>D:/IVRE-P1-Healthbox-thinkaloud/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
       <HintPath>D:/IVRE-P1-Healthbox-thinkaloud/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>

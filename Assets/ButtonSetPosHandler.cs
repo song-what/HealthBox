@@ -7,7 +7,12 @@ public class ButtonSetPosHandler : MonoBehaviour
     //public GameObject quizGroup;
     public GameObject settingGroup;
     public GameObject CameraRig;
+    static int rotateDegree;
+    void Start()
+    {
 
+        rotateDegree =0;
+    }
     public void GoUp()
     {
         CameraRig.transform.position = new Vector3(CameraRig.transform.position.x , CameraRig.transform.position.y + 0.05f, CameraRig.transform.position.z);
@@ -41,14 +46,19 @@ public class ButtonSetPosHandler : MonoBehaviour
 
     public void RotateLeft()
     {
-        CameraRig.transform.localRotation = Quaternion.Euler(0, -10, 0);
+        rotateDegree = rotateDegree - 10;
+        CameraRig.transform.localRotation = Quaternion.Euler(0, rotateDegree, 0);
         //CameraRig.transform.Rotate(new Vector3(0, -90, 0));
         Debug.Log("Press rotate key");
+        Debug.Log("degree " + rotateDegree);
     }
 
     public void RotateRightt()
     {
-        CameraRig.transform.localRotation = Quaternion.Euler(0, 10, 0);
+        rotateDegree = rotateDegree +10;
+        CameraRig.transform.localRotation = Quaternion.Euler(0, rotateDegree, 0);
         //CameraRig.transform.Rotate(new Vector3(0, -90, 0));
+        Debug.Log("degree " + rotateDegree);
+
     }
 }

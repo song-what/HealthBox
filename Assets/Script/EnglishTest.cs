@@ -16,6 +16,7 @@ public class EnglishTest : MonoBehaviour
 
     public GameObject buttonPre;
     public GameObject buttonNext;
+    public GameObject buttonEnd;
 
     public static bool clickA;
     public static bool clickB;
@@ -27,7 +28,7 @@ public class EnglishTest : MonoBehaviour
     public Button buttonC;
     public Button buttonD;
 
-    public string fileName = "Study/Answer.csv";
+    public string fileName = "Answer.csv";
 
     ColorBlock colorBlock;
     ColorBlock defaultColorBlock;
@@ -108,6 +109,8 @@ public class EnglishTest : MonoBehaviour
                 buttonPre.SetActive(true);
             }
 
+            
+
             UpdateButtonColor();
 
             if (nextQuestion == true)
@@ -130,6 +133,8 @@ public class EnglishTest : MonoBehaviour
             if (questionNr == 19)
             {
                 SaveAnswer();
+                buttonNext.SetActive(false);
+                buttonEnd.SetActive(true);
             }
         }
 
@@ -217,7 +222,8 @@ public class EnglishTest : MonoBehaviour
             buttonC.colors = defaultColorBlock;
             buttonD.colors = defaultColorBlock;*/
 
-        } else if (answers[questionNr] == "B")
+        }
+        else if (answers[questionNr] == "B")
         {
             /*buttonA.colors = defaultColorBlock;
             buttonB.colors = colorBlock;
@@ -228,24 +234,29 @@ public class EnglishTest : MonoBehaviour
             buttonC.image.color = Color.white;
             buttonD.image.color = Color.white;
 
-        } else if (answers[questionNr] == "C")
+        }
+        else if (answers[questionNr] == "C")
         {
             buttonC.image.color = new Color(0.16f, 0.59f, 0.92f);
             buttonA.image.color = Color.white;
             buttonB.image.color = Color.white;
             buttonD.image.color = Color.white;
-        } else if (answers[questionNr] == "D")
+
+        }
+        else if (answers[questionNr] == "D")
         {
             buttonD.image.color = new Color(0.16f, 0.59f, 0.92f);
             buttonA.image.color = Color.white;
             buttonB.image.color = Color.white;
             buttonC.image.color = Color.white;
-        } else
+        }
+        else
         {
             buttonA.image.color = Color.white;
             buttonB.image.color = Color.white;
             buttonC.image.color = Color.white;
             buttonD.image.color = Color.white;
+
         }
     }
     

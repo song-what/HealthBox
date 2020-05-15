@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/ReplicaStageSetting.unity
+- path: Assets/Replica.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

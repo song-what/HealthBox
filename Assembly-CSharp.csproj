@@ -66,6 +66,7 @@
     <Compile Include="Assets\ButtonBHandler.cs" />
     <Compile Include="Assets\ButtonCHandler.cs" />
     <Compile Include="Assets\ButtonDHandler.cs" />
+    <Compile Include="Assets\ButtonEndHandler.cs" />
     <Compile Include="Assets\ButtonPreHandler.cs" />
     <Compile Include="Assets\ButtonSetPosHandler.cs" />
     <Compile Include="Assets\OptionsClick.cs" />
